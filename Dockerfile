@@ -19,7 +19,7 @@ WORKDIR /app
 COPY --from=build /app/target/petlife-api-0.0.1-SNAPSHOT.jar app.jar
 
 # Expõe porta
-EXPOSE 80
+EXPOSE 8080
 
 # Variáveis de ambiente para escutar todas as interfaces
 ENV JAVA_OPTS="-Dserver.address=0.0.0.0 -Dserver.port=80"
